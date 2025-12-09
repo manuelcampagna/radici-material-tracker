@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radici Gestione Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/Users/manuelcampagna/Documents/Video Finiti Radici/logo-radici copia.png" alt="logo" width="110">
+    </div>
+    <h1 class="titolo">Radici Gestione Inventario</h1>
+</header>
+
+<main>
+
+    <!-- FORM ORDINATO -->
+    <div class="form-container">
+        <form id="form-lampada">
+
+            <div class="form-row">
+                <label for="lampName">Nome lampada:</label>
+                <input type="text" id="lampName" required>
+            </div>
+
+            <div class="form-row">
+                <label for="videoFatti">Video lavorazione fatti?</label>
+                <input type="checkbox" id="videoFatti">
+            </div>
+
+            <div class="form-row">
+                <label for="faseLav">Fase lavorazione:</label>
+                <input type="number" id="faseLav" min="0" max="10" required>
+            </div>
+
+            <button type="submit" class="btn">Aggiungi Lampada</button>
+        </form>
+    </div>
+
+
+    <!-- LISTA ORDINATA -->
+    <div class="list-container">
+        <div class="header-row">
+            <span>Nome</span>
+            <span>Video</span>
+            <span>Fase</span>
+            <span>Rimuovi</span>
+        </div>
+
+        <ol id="listaMateriali"></ol>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

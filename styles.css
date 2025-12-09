@@ -1,0 +1,101 @@
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    background-color: #faf7f2;
+    color: #3E3E3E;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.titolo {
+    color: #8B5E3C;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.form-container {
+    background: #D9C5A3;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#form-lampada {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.btn {
+    padding: 10px 18px;
+    border: 1px solid #444;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #eee;
+}
+
+.list-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #8B5E3C;
+}
+
+#listaMateriali li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px;
+    padding: 10px 0;
+    border-bottom: 1px solid #c8b49a;
+}
+
+.remove-btn {
+    background-color: #c55;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #a33;
+}
